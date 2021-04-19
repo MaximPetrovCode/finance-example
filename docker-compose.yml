@@ -1,17 +1,17 @@
 version: '3.1'
 services:
-#  backend:
-#    container_name: spring-postgresql
-#    image: springbootapp
-#    build:
-#      context: ./
-#      dockerfile: .Dockerfile
-#    ports:
-#      - "9090:9090"
-#    depends_on:
-#      - db
+  backend:
+    container_name: spring-postgresql
+    image: springbootapp
+    build:
+      context: ./
+      dockerfile: .Dockerfile
+    ports:
+      - "9090:9090"
+    depends_on:
+      - dbpostgresql
 
-  db:
+  dbpostgresql:
     image: postgres:alpine
     ports:
       - "5432:5432"
