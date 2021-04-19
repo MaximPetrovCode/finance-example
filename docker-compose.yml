@@ -1,0 +1,25 @@
+version: '3.1'
+services:
+#  backend:
+#    container_name: spring-postgresql
+#    image: springbootapp
+#    build:
+#      context: ./
+#      dockerfile: .Dockerfile
+#    ports:
+#      - "9090:9090"
+#    depends_on:
+#      - db
+
+  db:
+    image: postgres:alpine
+    ports:
+      - "5432:5432"
+    restart: always
+    environment:
+      - POSTGRES_DB=finance_db
+      - POSTGRES_USER=finance_user
+      - POSTGRES_PASSWORD=finance_user
+    volumes:
+      - ./SQL/create_db_and_user.sql:/docker-entrypoint-initdb.d/create_db_and_user.sql
+      - ./SQL/clear_tables.sql:/docker-entrypoint-initdb.d/clear_tables.sql
