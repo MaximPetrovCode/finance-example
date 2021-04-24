@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  padding: 20px 30px;
+  * :not(:first-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.update-btn {
+  width: 100px;
+}
+
+.chart {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+}
+
+mat-card {
+  margin: 20px 30px;
+}

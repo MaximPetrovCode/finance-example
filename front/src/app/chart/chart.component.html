@@ -1,0 +1,15 @@
+<mat-card>
+  <mat-card-content class="container">
+    <div class="chart">
+      <canvas baseChart
+              [datasets]="datasets"
+              [labels]="labels"
+              [options]="options"
+              [plugins]="plugins"
+              [legend]="legend"
+              [chartType]="chartType">
+      </canvas>
+    </div>
+    <button class="update-btn" mat-button mat-raised-button color="primary" (click)="fetch()">Update</button>
+  </mat-card-content>
+</mat-card>

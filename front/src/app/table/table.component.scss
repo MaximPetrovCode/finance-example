@@ -1,0 +1,24 @@
+table {
+  width: 100%;
+}
+
+.max {
+  background: greenyellow;
+  color: crimson;
+  font-weight: 900;
+}
+
+.min {
+  background: red;
+  color: black;
+  font-weight: 900;
+}
+
+.mat-cell {
+  padding: 5px 10px;
+  width: 60px;
+}
+
+mat-card {
+  margin: 20px 30px;
+}
