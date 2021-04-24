@@ -1,18 +1,15 @@
 # Stages
 
-## 1. Build
+### 1. Build:
+`docker-compose up --build`
 
-`./gradlew bootJar`
-
-## 2. Run using docker composer
+### 2. Run using docker composer
 `docker-compose up`
 
-## 3. APIs
+### Frontend
+[http://localhost:8080/](http://localhost:8080/)
 
-### Main
-http://localhost:9090/
-
-### Etc.
+### Server APIs
 [http://localhost:9090/values](http://localhost:9090/values)
 
 [http://localhost:9090/currency](http://localhost:9090/currency)
