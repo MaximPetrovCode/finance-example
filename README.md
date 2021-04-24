@@ -1,9 +1,12 @@
 # Stages
 
-### 1. Build:
+### 1. Build instances
+`./gradlew bootJar && cd ./front/ && npm run build`
+
+### 2. Build containers:
 `docker-compose up --build`
 
-### 2. Run using docker composer
+### 3. Or run using docker composer
 `docker-compose up`
 
 ### Frontend
